@@ -44,4 +44,8 @@ app.get('/team/:team', async (req, res) => {
 
 });
 
+app.get('/', (req, res) => {
+  res.send('hi')
+})
+
 app.listen(8000 || process.env.PORT, () => {console.log('listening on port')})
